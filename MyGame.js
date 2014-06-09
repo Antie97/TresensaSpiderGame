@@ -12,8 +12,11 @@ MyGame = function()
 
     //Load the spriteseet image we are using for our animated sprite
     var gameAssets = [
-        {id:'spriteSheetImg',   url:'images/spider_crawl.png'},
-		{id:'flyimg', url:'images/fly.png'},
+        {id:'spriteSheetImg',   url:'images/shoot.png'},
+		{id:'bugImage', url: 'images/Bug.png'},
+		{id:'shooterImage', url: 'images/shoot.png'},
+		{id:'bulletImage', url: 'images/bullet.png'},
+		{id:'backImage', url: 'images/graveyard.png'},
     ];
     this.assetManager.assignImageAssetList("required", gameAssets);
 
@@ -21,7 +24,7 @@ MyGame = function()
     TGE.Button.DefaultWidth = 150;
     TGE.Button.DefaultHeight = 40;
     TGE.Button.DefaultFont = "24px sans-serif";
-    TGE.Button.DefaultIdleColor = "#FFF";
+    TGE.Button.DefaultIdleColor = "#FF0";
     TGE.Button.DefaultHoverColor = "#C4C4C4";
 
     //Go to the GameScreen after loading
